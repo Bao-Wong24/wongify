@@ -250,6 +250,11 @@ a {
   border: 2px solid var(--color-headings);
 }
 
+.btn--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 .btn--outline:hover {
   background: var(--color-headings);
   color: #fff;
@@ -492,3 +497,45 @@ a {
     margin-left: 6rem;
   }
 }
+
+/* callouts */
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout--primary {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout .btn {
+  justify-self: center; /* horizontal aligned grid items */
+  align-self: center; /* vertical aligned grid items */
+}
+
+.callout__content {
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .callout .grid--cols-2 {
+    grid-template-columns: repeat(2, auto); /* 1fr auto */
+  }
+
+  .callout__content {
+    text-align: left;
+  }
+
+  .callout .btn {
+    justify-self: start;
+    margin: 0 2rem;
+  }
+}
+
