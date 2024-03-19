@@ -595,7 +595,7 @@ a {
 }
 
 .collapsible__content {
-  max-height: 0;
+  max-height:0;
   overflow: hidden;
   opacity: 0.5;
   transition: all 0.3s;
@@ -832,5 +832,84 @@ a {
   .block-showcase__picture > img {
     width: auto;
     max-width: 700px;
+  }
+}
+
+/* Footer */
+.footer {
+  background: #232323;
+}
+
+.footer a {
+  color: #777;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__section .list {
+  margin: 0;
+}
+
+.footer__heading {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.footer__brand img {
+  /* TODO: Consider refactoring this and applying it 
+  all images */
+  width: 100%;
+  max-width: 250px;
+}
+
+.footer__copyright {
+  font-size: 2.1rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer .collapsible__chevron {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+  }
+
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__section {
+    border: 0;
+    margin-left: 4rem;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;
   }
 }
