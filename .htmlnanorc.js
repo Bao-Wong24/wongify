@@ -1,4 +1,4 @@
 module.exports = {
   minifySvg: false,
-  minifypng: false,
+  minifypng: false
 };
