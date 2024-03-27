@@ -235,12 +235,12 @@ a {
 
 .btn--secondary {
   background: var(--color-secondary);
-  color: #181818;
+  color: #fff;
 }
 
 .btn--accent {
   background: var(--color-accent);
-  color: #fff;
+  color: #181818;
 }
 
 .btn--primary:hover {
